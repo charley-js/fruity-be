@@ -12,7 +12,7 @@ public class fruityApp {
         FruityController fruityController = new FruityController();
 
         //Define endpoints
-        app.post("/spin", fruityController::spin );
+        app.get("/spin", fruityController::spin );
 
 
     }
