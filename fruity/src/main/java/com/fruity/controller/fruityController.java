@@ -10,7 +10,7 @@ public class FruityController {
     private final GameLogic gameLogic = new GameLogic();
 
     public void spin(Context ctx) {
-        //calls gameLogic processSpin() method to retrieve result of the spin
+        //calls gameLogic processSpin() method to retrieve result of the spin and structure data with SpinResult
         SpinResult result = gameLogic.processSpin();
         //send result of spin to front-end
         ctx.json(result);
