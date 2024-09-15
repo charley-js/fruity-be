@@ -12,6 +12,7 @@ public class fruityApp {
         FruityController fruityController = new FruityController();
 
         //Define endpoints
+        app.get("/", ctx -> ctx.result("Fruity Slots API. /spin to try it out"));
         app.get("/spin", fruityController::spin );
 
 
