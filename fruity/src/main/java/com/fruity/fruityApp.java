@@ -3,7 +3,7 @@ package com.fruity;
 import io.javalin.Javalin;
 import com.fruity.controller.FruityController;
 
-public class fruityApp {
+public class FruityApp {
     public static void main(String[] args) {
         //initialize server
         Javalin app = Javalin.create().start();
