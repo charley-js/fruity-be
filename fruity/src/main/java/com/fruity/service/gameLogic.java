@@ -13,9 +13,9 @@ import java.util.Map;
 public class GameLogic {
     //create instance of RandomNumberGenerator to generate symbols
     private final RandomNumberGenerator rng = new RandomNumberGenerator();
-    //create instance of balance to access and update users balance
+    //create instance of balance to access and update users balances
     private final Balance balance = new Balance();
-    //initialize hashmap to hold symbol-payout relationship
+    //initialize hashmap to hold symbol-payout relationships
     private final Map<String, Integer> symbolPayouts = new HashMap<>();
 
     public GameLogic() {

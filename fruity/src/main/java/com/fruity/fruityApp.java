@@ -5,7 +5,7 @@ import com.fruity.controller.FruityController;
 
 public class FruityApp {
     public static void main(String[] args) {
-        //initialize server
+        //initialize server and start
         Javalin app = Javalin.create().start();
 
         //create instance of fruityController to handle http requests
