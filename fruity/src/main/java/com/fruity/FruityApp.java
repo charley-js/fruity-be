@@ -6,7 +6,9 @@ import com.fruity.controller.FruityController;
 public class FruityApp {
     public static void main(String[] args) {
         //initialize server and start
-        Javalin app = Javalin.create().start();
+        Javalin app = Javalin.create(config -> {
+            config.enableCorsForAllOrigins();
+        }).start();
 
         //create instance of fruityController to handle http requests
         FruityController fruityController = new FruityController();
