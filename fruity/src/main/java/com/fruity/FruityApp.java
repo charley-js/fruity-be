@@ -9,9 +9,13 @@ import com.fruity.controller.FruityController;
 public class FruityApp {
     public static void main(String[] args) {
         //initialize server and start
-        Javalin app = Javalin.create(config -> {
-            config.enableCorsForAllOrigins();
-        }).start();
+         Javalin app = Javalin.create(config -> {
+    config.bundledPlugins.enableCors(cors -> {
+        cors.addRule(it -> {
+            it.anyHost();
+        });
+    });
+}).start();
 
         //create instance of fruityController to handle http requests
         FruityController fruityController = new FruityController();
