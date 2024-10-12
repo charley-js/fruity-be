@@ -1,6 +1,9 @@
 package com.fruity;
 
+
 import io.javalin.Javalin;
+import io.javalin.config.JavalinConfig;
+
 import com.fruity.controller.FruityController;
 
 public class FruityApp {
