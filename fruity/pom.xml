@@ -47,7 +47,7 @@
                 <configuration>
                     <archive>
                         <manifestEntries>
-                            <Main-Class>com.fruity.FruityApp</Main-Class> <!-- Ensure this matches your main class -->
+                            <Main-Class>com.fruity.FruityApp</Main-Class>
                         </manifestEntries>
                     </archive>
                     <descriptorRefs>
